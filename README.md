@@ -1,2 +1,33 @@
-# spam-detection_model_api
-Built and deployed a Spam Detection API using FastAPI and Scikit-learn. Implemented NLP preprocessing with TF-IDF vectorization and trained a machine learning model for real-time spam message prediction.
+# Spam Detection API
+
+## Objective
+Detect spam messages using NLP and Machine Learning.
+
+## Tech Stack
+- FastAPI
+- Scikit-learn
+- TF-IDF
+- Joblib
+
+## Model Used
+- Multinomial Naive Bayes
+
+## Run API
+
+```bash
+uvicorn app:app --reload
+```
+
+## Swagger UI
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+## Sample Input
+
+```json
+{
+  "message": "Win free iphone now"
+}
+```
